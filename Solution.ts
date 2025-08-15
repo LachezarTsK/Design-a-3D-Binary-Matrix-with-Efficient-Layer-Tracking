@@ -16,7 +16,6 @@ class Matrix3D {
         this.countOnesForLayerX = new Array<number>(size).fill(0);
     }
 
-
     setCell(x: number, y: number, z: number): void {
         this.countOnesForLayerX[x] += this.matrix[x][y][z] ^ 1;
         this.matrix[x][y][z] = 1;
